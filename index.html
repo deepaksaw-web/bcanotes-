@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA NOTES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="C:\Users\deepa\OneDrive\Desktop\New folder\bootstrop.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="food-search text-center">
+      <div class="container">
+    <!-- Navbar Section Starts Here -->
+    
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                </a>
+                
+            </div> 
+                       
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="categories.html">Notes</a>
+                    </li>
+                    <li>
+                        <a href="foods.html">Foods</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <form action="food-search.html" method="POST">
+                <input type="search" name="search" placeholder="Search for Food.." required>
+                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+            </form>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
+
+    <!-- CAtegories Section Starts Here -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center">Explore Foods</h2>
+
+            <a href="category-foods.html">
+            <div class="box-3 float-container">
+                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Pizza</h3>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Burger</h3>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="box-3 float-container">
+                <img src="images/momo.jpg" alt="Momo" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Momo</h3>
+            </div>
+            </a>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Categories Section Ends Here -->
+    <style>
+        .section-padding {
+                padding: 100px 0;
+            }
+            .group-title-index {
+text-align: center;
+margin-bottom: 60px;
+position: relative;
+z-index: 2;
+color: #49575f;
+}.group-title-index .top-title {
+text-transform: uppercase;
+margin: 0 0 15px 0;
+font-weight: 400;
+font-size: 16px;
+}.group-title-index .center-title {
+font-size: 30px;
+font-weight: 900;
+margin: 0 0 15px 0;
+text-transform: uppercase;
+line-height: 30px;
+}.group-title-index .bottom-titles {
+position: relative;
+display: inline-block;
+}.group-title-index .bottom-titles:before {
+right: -32px;
+}
+.group-title-index .bottom-titles:after, .group-title-index .bottom-titles:before {
+position: absolute;
+content: '';
+width: 22px;
+height: 2px;
+background-color: #21c2f8;
+top: 50%;
+margin-top: -5px;
+}.group-title-index .bottom-titles .bottom-icons {
+margin: 0 auto;
+font-size: 26px;
+color: #21c2f8;
+}.group-title-index .bottom-titles:after {
+left: -32px;
+}
+.choose-course .icon-circle {
+position: relative;
+width: 170px;
+height: 170px;
+border-radius: 50%;
+margin: 0 auto
+}
+
+.choose-course .icon-circle .icon-background {
+position: absolute;
+bottom: 12px;
+width: 146px;
+left: 50%;
+margin-left: -73px;
+height: 146px;
+border-radius: 50%;
+background-color: #21c2f8;
+color: #fff;
+z-index: 11;
+display: table;
+transition: all .5s ease-in-out;
+-webkit-transform-origin: 50% 0;
+transform-origin: 50% 0
+}
+
+.choose-course .icon-circle .icon-background .icons-img {
+text-align: center;
+margin: 0 auto;
+color: #fff;
+display: table-cell;
+vertical-align: middle;
+font-size: 70px;
+line-height: 1;
+transition: all 0.4s ease
+}
+
+.choose-course .icon-circle .icon-background:after {
+position: absolute;
+content: '';
+top: -2px;
+left: -2px;
+bottom: -2px;
+right: -2px;
+border: 3px solid #fff;
+border-radius: 50%;
+transition: all 0.4s ease
+}
+
+.choose-course .icon-circle .info {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+text-align: center;
+border-radius: 50%;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden
+}
+
+.choose-course .icon-circle .info .info-back {
+opacity: 1;
+border-radius: 50%;
+background-color: #242c42;
+width: 100%;
+height: 100%;
+display: table;
+position: relative;
+transition: all 0.3s ease
+}
+
+.choose-course .icon-circle .info .info-back:before {
+position: absolute;
+z-index: 20;
+content: '';
+top: -1px;
+left: -1px;
+bottom: -1px;
+right: -1px;
+border: 12px solid #21c2f8;
+border-radius: 50%
+}
+
+.choose-course .icon-circle .info .info-back a {
+color: #fff;
+vertical-align: middle;
+padding: 20px;
+display: table-cell;
+position: relative;
+z-index: 2;
+transition: all 0.7s ease
+}
+
+.choose-course .icon-circle:hover .icon-background {
+background-color: #21c2f8;
+bottom: 90%
+}
+
+.choose-course .icon-circle:hover .icon-background:after {
+border: 2px solid #fff
+}
+
+.choose-course .icon-circle:hover .info .info-back:before {
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6)
+}
+
+.choose-course .icon-circle:hover .info .info-back a {
+transition-delay: 1s;
+z-index: 21
+}
+
+.choose-course .name-course {
+margin-top: 25px;
+color: #49575f;
+text-align: center;
+font-size: 16px
+}
+
+.choose-course .name-course a, .choose-course .name-course p, .choose-course .name-course span {
+color: #fff;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 700;
+transition: all 0.2s linear
+}
+
+.choose-course .name-course i {
+margin-left: 5px;
+transition: all 0.2s linear
+}
+
+.choose-course .name-course:hover a, .choose-course .name-course:hover p, .choose-course .name-course:hover span, .choose-course .name-course:hover i {
+color: #21c2f8
+}
+
+.choose-course .choose-course-wrapper .col-md-4.col-xs-6 {
+margin-bottom: 70px
+}
+
+.choose-course .choose-course-wrapper .col-md-4.col-xs-6:nth-last-child(-n+3) {
+margin-bottom: 0
+}.fa-long-arrow-right:before {
+content: "\f178";
+}
+
+        </style>
+            <div class="section section-padding choose-course" style="background-color:#001;">
+                <div class="container">
+                    <div class="group-title-index"><h4 class="top-title" style="color:#fff;">CHOOSE YOUR SEMESTER </h4>
+
+                        <h2 class="center-title" style="color:#fff;">GET THE SEMESTER WISE NOTES & VERIFIED COURSE</h2>
+
+                        <div class="bottom-titles"><i class="fa-solid fa-book fa-2xl "></i></div>
+                    </div>
+                    <div class="choose-course-wrapper row">
+                        <div class="col-md-4 col-xs-6">
+                            <div class="item-course item-1">
+                                <div class="icon-circle">
+                                    <div class="icon-background"><i class="icons-img "><p style="font-size:35px;">SEM I</p></i></div>
+                                    <div class="info">
+                                        <div class="info-back"><a href="courses.html">C , Bussiness management, fundamental</a></div>
+                                    </div>
+                                </div>
+                                <div class="name-course"><a href="courses.html">semester I</a><i class="fa fa-long-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <div class="item-course item-2">
+                                <div class="icon-circle">
+                                    <div class="icon-background"><i class="icons-img "><p style="font-size:35px;">SEM II</p></i></i></div>
+                                    <div class="info">
+                                        <div class="info-back"><a href="courses.html">c++ ,DBMS, Environmental Science</a></div>
+                                    </div>
+                                </div>
+                                <div class="name-course"><a href="courses.html">semester II</a><i class="fa fa-long-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <div class="item-course item-3">
+                                <div class="icon-circle">
+                                    <div class="icon-background"><i class="icons-img "><p style="font-size:35px;">SEM III</p></i></i></div>
+                                    <div class="info">
+                                        <div class="info-back"><a href="C:\Users\deepa\OneDrive\Desktop\New folder\semester\sem3.html">Java , Data structure , system Analysis</a></div>
+                                    </div>
+                                </div>
+                                <div class="name-course"><a href="C:\Users\deepa\OneDrive\Desktop\New folder\semester\sem3.html">semester III</a><i class="fa fa-long-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <div class="item-course item-4">
+                                <div class="icon-circle">
+                                    <div class="icon-background"><i class="icons-img "><p style="font-size:35px;">SEM IV</p></i></i></div>
+                                    <div class="info">
+                                        <div class="info-back"><a href="courses.html">Multimedia,HTML, Visual Programming,</a></div>
+                                    </div>
+                                </div>
+                                <div class="name-course"><a href="courses.html">semester IV</a><i class="fa fa-long-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <div class="item-course item-5">
+                                <div class="icon-circle">
+                                    <div class="icon-background"><i class="icons-img "><p style="font-size:35px;">SEM V</p></i></div>
+                                    <div class="info">
+                                        <div class="info-back"><a href="courses.html">Web Design,Linux Programming, Analysis of Algorithms</a></div>
+                                    </div>
+                                </div>
+                                <div class="name-course"><a href="courses.html">semester V</a><i class="fa fa-long-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <div class="item-course item-6">
+                                <div class="icon-circle">
+                                    <div class="icon-background"><i class="icons-img "><p style="font-size:35px;">SEM VI</p></i></div>
+                                    <div class="info">
+                                        <div class="info-back"><a href="courses.html">Network Security,Principle of Management</a></div>
+                                    </div>
+                                </div>
+                                <div class="name-course"><a href="courses.html">semester VI</a><i class="fa fa-long-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <!-- fOOD MEnu Section Starts Here -->
+    <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Quick Link for Programming</h2>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>C Language</h4>
+                    <!-- <p class="food-price">$2.3</p> -->
+                    <p class="C language">
+                        C is a powerful system programming language, and It is an excellent general purpose programming language.
+                    </p>
+                    <br>
+
+                    <a href="#" class="btn btn-primary"> ABOUT C  </a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-burger.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>C++ Language</h4>
+                    <!-- <p class="food-price"></p> -->
+                    <p class="food-detail">
+                        C++ is one of the world's most popular programming languages. C++ can be found in today's operating systems.
+                    </p>
+                    <br>
+
+                    <a href="#" class="btn btn-primary">ABOUT C++</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="D:\project\1st\images\ja.png" alt="Chicke Hawain Burger" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Java Programming</h4>
+                    <!-- <p class="food-price">$2.3</p> -->
+                    <p class="">java-details
+                        java is one of the best popular programming language. that is based on Oops concept 
+                    </p>
+                    <br>
+
+                    <a href="#" class="btn btn-primary">About java</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="D:\project\1st\images\ja.png"s alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>PHP</h4>
+                    <!-- <p class="food-price">$2.3</p> -->
+                    <p class="food-detail">
+                        PHP is one of the backend developing programming language. 
+                    </p>
+                    <br>
+
+                    <a href="#" class="btn btn-primary">About Php</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Html</h4>
+                    <!-- <p class="food-price">$2.3</p> -->
+                    <p class="food-detail">
+                        HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages.
+                    </p>
+                    <br>
+
+                    <a href="#" class="btn btn-primary">About Html</a>
+                </div>
+            </div>
+
+                <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-pizz.jpg" alt="Chicke Hawain Momo" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Data Structure</h4>
+                     <!-- <p class="food-price">$2.3</p>  -->
+                    <p class="food-detail">
+                        A data structure is a specialized format for organizing, processing, retrieving and storing data.
+                    </p>
+                    <br>
+
+                    <a href="#" class="btn btn-primary">About Data Structure</a>
+                </div>
+            </div> 
+
+
+            <div class="clearfix"></div>
+
+            
+
+        </div>
+
+        <p class="text-center">
+            <a href="#">See All About BCA</a>
+        </p>
+    </section>
+    <!-- fOOD Menu Section Ends Here -->
+
+   
+
+    <!-- footer Section Starts Here -->
+    <!-- <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved. Designed By <a href="#">Deepak kumar saw</a></p>
+        </div>
+    </section> -->
+    <!-- footer Section Ends Here -->
+    <style>
+
+* {
+  box-sizing: border-box
+}
+html, body {
+  height: 100%
+}
+body {
+	font: 11px "Open Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: auto;
+  display: flex; 
+  flex-flow: column nowrap;
+
+}
+ul {
+  list-style: none
+}
+a {
+  text-decoration: none
+}
+.generic-anchor {
+	color: #2B60DE;
+    visited {
+		color: #2B60DE
+	}
+	&:hover {
+		color: #2B60DE
+	}
+}
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+footer {
+  background: rgb(55,55,55);
+  margin-top: auto;
+  width: 100%
+}
+.footer-list-top {
+  width: 33.333%
+}
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 10px
+}
+.footer-list-header {
+  padding: 10px 0 5px 0;
+  color: #fff;
+  font: 2.3vw "Oswald", sans-serif
+}
+.footer-list-anchor {
+  font: 1.3em "Open Sans", sans-serif
+}
+.footer-social-section {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5px;
+}
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid whitesmoke;
+  width: calc(100% - 20px)
+}
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: rgb(55,55,55);
+  padding: 0 20px
+}
+.footer-social-connect {
+  display: flex;
+  align-items: center;
+  font: 3.5em "Oswald", sans-serif;
+  color: #fff
+}
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px
+}
+.footer-social-overlap > a {
+  font-size: 3em
+}
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.38em
+}
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid white ;
+  margin-top: 10px
+}
+.footer-bottom-section > div:first-child {
+  margin-right: auto
+}
+.footer-bottom-wrapper {
+  font-size: 1.5em;
+  color: #fff
+}
+.footer-address {
+  display: inline;
+  font-style: normal
+}
+@media only screen and (max-width: 768px) {
+  .footer-list-header {
+    font-size: 2em
+  }
+  .footer-list-anchor {
+    font-size: 1.1em
+  }
+  .footer-social-connect {
+    font-size: 2.5em
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em
+  }
+}
+@media only screen and (max-width: 568px) {
+  main {
+    font-size: 5em
+  }
+  .footer-list-top {
+    width: 100%
+  }
+  .footer-list-header {
+    font-size: 3em;
+  }
+  .footer-list-anchor {
+    font-size: 1.5em
+  }
+  .footer-social-section {
+    justify-content: center
+  }
+  .footer-social-section::after {
+    top: 25%
+  }
+  .footer-social-connect {
+    margin-bottom: 10px;
+    padding: 0 10px
+  }
+  .footer-social-overlap {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-icons-wrapper {
+    width: 100%;
+    padding: 0
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 20px;
+  }
+  .footer-bottom-section {
+    padding: 0 5px 10px 5px
+  }
+  .footer-bottom-wrapper {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-social-overlap > a {
+    margin: auto
+  }
+  .footer-social-overlap > a:not(:first-child) {
+    margin-left: 0;
+  }
+  .footer-bottom-rights {
+    display: block
+  }
+}
+@media only screen and (max-width: 320px) {
+  .footer-list-header {
+    font-size: 2.2em
+  }
+  .footer-list-anchor {
+    font-size: 1.2em
+  }
+  .footer-social-connect {
+    font-size: 2.4em
+  }
+  .footer-social-overlap > a {
+    font-size: 2.24em
+  }
+  .footer-bottom-wrapper {
+    font-size: 1.3em
+  }
+}
+</style>
+<footer class="flex-rw">
+  
+    <ul class="footer-list-top">
+      <li>
+        <h4 class="footer-list-header">About Pavilion</h4></li>
+      <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">GET TO KNOW US</a></li>
+      <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">PROMOS</a></li>
+      <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">BECOME A RETAILER</a></li>
+  
+      <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">JOB OPENINGS</a></li>
+  
+      <li><a href='/shop/about-show-schedule' class="generic-anchor footer-list-anchor" itemprop="significantLink">EVENTS</a></li>
+    </ul>
+    <ul class="footer-list-top">
+      <li>
+        <h4 class="footer-list-header">The Gift Selection</h4></li>
+  
+  
+      <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">ANGEL FIGURINES</a></li>
+      <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">HOME DECOR</a></li>
+      <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">MUGS</a></li>
+      <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">PET LOVER</a></li>
+      <li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor" target="_blank">HANDBAGS & JEWELRY</a></li>
+    </ul>
+    <ul class="footer-list-top">
+      <li id='help'>
+        <h4 class="footer-list-header">Please Help Me</h4></li>
+      <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
+      <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
+      <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">STORE LOCATOR</a></li>
+      <li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor" itemprop="significantLink">NEW USERS</a></li>
+      <li id='order-tracking'><a href='/shop/order-status' itemprop="significantLink" class="generic-anchor footer-list-anchor">ORDER STATUS</a></li>
+    </ul>
+    <section class="footer-social-section flex-rw">
+        <span class="footer-social-overlap footer-social-connect">
+        CONNECT <span class="footer-social-small">with</span> US
+        </span>
+        <span class="footer-social-overlap footer-social-icons-wrapper">
+        <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+        <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+        <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+        <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+        </span>
+    </section>
+    <section class="footer-bottom-section flex-rw">
+  <div class="footer-bottom-wrapper">   
+  <i class="fa fa-copyright" role="copyright">
+   
+  </i> 2022  <address class="footer-address" role="company address"></address><span class="footer-bottom-rights"> - All Rights Reserved - </span>
+      </div>
+      <div class="footer-bottom-wrapper">
+      <a href="#" class="generic-anchor" rel="nofollow">Terms</a> | <a href="#" class="generic-anchor" rel="nofollow">Privacy</a>
+        </div>
+    </section>
+  </footer>
+</body>
+</html>
